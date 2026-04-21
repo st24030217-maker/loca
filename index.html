@@ -305,7 +305,7 @@
         marcador.bindPopup("Guardando... ⏳").openPopup();
 
         try {
-          const { error } = await _supabase.from("cordenadas").insert([
+          const { error } = await _supabase.from("marcadores").insert([
             {
               lat: tempLatLng.lat,
               lng: tempLatLng.lng,
